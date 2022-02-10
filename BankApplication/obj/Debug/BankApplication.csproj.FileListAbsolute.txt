@@ -1,0 +1,8 @@
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\obj\Debug\BankApplication.csproj.AssemblyReference.cache
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\obj\Debug\BankApplication.csproj.CoreCompileInputs.cache
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\bin\Debug\BankApplication.exe.config
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\bin\Debug\BankApplication.xml
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\bin\Debug\BankApplication.exe
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\bin\Debug\BankApplication.pdb
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\obj\Debug\BankApplication.exe
+C:\Users\Conli\Source\Repos\cis297-w2022-assignment3-template-ConliskM\BankApplication\obj\Debug\BankApplication.pdb

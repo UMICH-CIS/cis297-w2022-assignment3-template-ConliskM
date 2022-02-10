@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BankApplication</name>
+    </assembly>
+    <members>
+        <member name="T:BankApplication.Account">
+            <summary>
+            Base Account class, inherited by CheckingAccount and SavingAccount
+            </summary>
+        </member>
+        <member name="P:BankApplication.Account.Balance">
+            <summary>
+            Balance property. get returns _balance, set assigns _balance only if positive value is passed.
+            </summary>
+        </member>
+        <member name="M:BankApplication.Account.#ctor(System.Decimal)">
+            <summary>
+            Initializes _balance to value passed.
+            </summary>
+            <param name="bal"></param>
+        </member>
+        <member name="M:BankApplication.Account.Credit(System.Decimal)">
+            <summary>
+            "Deposits" amount passed to _balance, unless amount passed is negative.
+            </summary>
+            <param name="amount"></param>
+            <returns>
+            True if amount is Credited.
+            False if not.
+            </returns>
+        </member>
+        <member name="M:BankApplication.Account.Debit(System.Decimal)">
+            <summary>
+            "Withdraws" amount passed to _balance, unless _balance is less than withdrawl amount.
+            </summary>
+            <param name="amount"></param>
+            <returns>
+            True if amount is Debited.
+            False if amount is not Debited.
+            </returns>
+        </member>
+        <member name="T:BankApplication.SavingAccount">
+            <summary>
+            SavingAccount class, inherits from Account. Includes interestRate.
+            </summary>
+        </member>
+        <member name="M:BankApplication.SavingAccount.#ctor(System.Decimal,System.Decimal)">
+            <summary>
+            Constructor, initializes interest rate and balance.
+            </summary>
+            <param name="rate"></param>
+            <param name="bal"></param>
+        </member>
+        <member name="M:BankApplication.SavingAccount.CalculateInterest">
+            <summary>
+            Calculates interest earned from balance.
+            </summary>
+            <returns>Earned interest</returns>
+        </member>
+        <member name="T:BankApplication.CheckingAccount">
+            <summary>
+            CheckingAccount class, inherits from Account. Includes fee charged for each transaction.
+            Fee is only charged if transaction is completed.
+            </summary>
+        </member>
+        <member name="M:BankApplication.CheckingAccount.#ctor(System.Decimal,System.Decimal)">
+            <summary>
+            Constructor initializes _fee and _balance.
+            </summary>
+            <param name="fee"></param>
+            <param name="bal"></param>
+        </member>
+        <member name="M:BankApplication.CheckingAccount.Credit(System.Decimal)">
+            <summary>
+            Overriden from base, will charge fee if amount is valid.
+            </summary>
+            <param name="amount"></param>
+            <returns>
+            True if fee is charged.
+            False if not.
+            </returns>
+        </member>
+        <member name="M:BankApplication.CheckingAccount.Debit(System.Decimal)">
+            <summary>
+            Overriden from base, will charge fee if amount is valid.
+            </summary>
+            <param name="amount"></param>
+            <returns>
+            True if fee is charged.
+            False if not.
+            </returns>
+        </member>
+        <member name="T:BankApplication.AccountTest">
+            <summary>
+            Test class for account class hierarchy
+            </summary>
+        </member>
+        <member name="M:BankApplication.AccountTest.Main(System.String[])">
+            <summary>
+            Entry point for program
+            </summary>
+            <param name="args"></param>
+        </member>
+    </members>
+</doc>
